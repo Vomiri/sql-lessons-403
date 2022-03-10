@@ -1,0 +1,4 @@
+полезные команды
+INSERT INTO users (name, surname, patronymic) VALUES ('Семенов', 'Семен', 'Сименович')
+
+ALTER TABLE users ADD CONSTRAINT ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);
