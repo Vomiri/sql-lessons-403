@@ -1,0 +1,25 @@
+CREATE TABLE users 
+(u_id int(7) PRIMARY KEY AUTO_INCREMENT,
+u_name VARCHAR(60),
+surname VARCHAR(60),
+patronymic VARCHAR(60),
+birthday DATE);
+
+CREATE TABLE categories 
+(c_id INT(7) PRIMARY KEY AUTO_INCREMENT,
+c_name VARCHAR(60),
+parent_categories INT(7));
+
+CREATE TABLE tag 
+(tag_id INT(7) PRIMARY KEY AUTO_INCREMENT,
+t_name VARCHAR(60),
+color VARCHAR(60));
+
+CREATE TABLE project 
+(p_id INT(7) PRIMARY KEY AUTO_INCREMENT,
+name_project VARCHAR(60));
+
+CREATE TABLE tasks
+(task_id int(7) PRIMARY KEY AUTO_INCREMENT,
+name_task VARCHAR(60),
+date_n DATE, date_k DATE);
