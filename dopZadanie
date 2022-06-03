@@ -1,0 +1,7 @@
+SELECT 
+employees.emp_no, employees.first_name, employees.last_name, employees.hire_date,
+departments.dept_name FROM `dept_emp` 
+JOIN employees on dept_emp.emp_no = employees.emp_no
+JOIN departments ON dept_emp.dept_no = departments.dept_no
+WHERE hire_date BETWEEN '1990-01-01' and '1995-12-31'
+ORDER by employees.emp_no
